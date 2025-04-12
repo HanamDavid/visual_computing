@@ -1,2 +1,3 @@
-# visual_computing
-A Git Repo where I Computing projects related to visual computing
+<h1>Visual Computing </h1>
+<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8cb5c12b-0cf0-4d88-bc93-60911c98fc98/dg443ou-a47a1004-ac33-4206-99a7-9f5268d0963a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhjYjVjMTJiLTBjZjAtNGQ4OC1iYzkzLTYwOTExYzk4ZmM5OFwvZGc0NDNvdS1hNDdhMTAwNC1hYzMzLTQyMDYtOTlhNy05ZjUyNjhkMDk2M2EuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vdSIGeRvZ63MJhcBH4rlwHXQDI8UKRWZqlPqgSxbWdM" alt="Computer" width="200"/>
+<p> A Git Repo where I Computing projects related to visual computing</p>
