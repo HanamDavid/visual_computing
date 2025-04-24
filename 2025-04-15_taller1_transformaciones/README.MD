@@ -16,7 +16,7 @@ For the unity project we put a bear and a box, we apply a series of transformati
 ![unity](imgs/unity.png)
 
 | [![React Three Fiber](https://img.shields.io/badge/React_Three_Fiber-%23ECB365.svg?style=for-the-badge&logo=react&logoColor=%23282C34)](https://docs.pmnd.rs/react-three-fiber) |
-For the react app you can run it with npx vite after installing the packages, for this app we downloaded a model of a frog and we put some lights in the scene, on the top of the frog there is a floating sphere that makes the transformations
+For the react app you can run it with npx vite after installing the packages, for this app we downloaded a model of a frog and we put some lights in the scene, on the top of the frog there is a floating sphere that makes the transformations, as well in the folder threejspure there is only the model of the frog rotating on the scene since is only html css and js with threejs and without react
 ![frog](imgs/frog.gif)
 
 | [![Processing](https://img.shields.io/badge/Processing-0078D2?style=for-the-badge&logo=processing&logoColor=white)](https://processing.org/) |
