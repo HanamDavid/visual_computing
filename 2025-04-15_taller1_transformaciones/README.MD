@@ -18,3 +18,10 @@ For the unity project we put a bear and a box, we apply a series of transformati
 [![React Three Fiber](https://img.shields.io/badge/React_Three_Fiber-%23ECB365.svg?style=for-the-badge&logo=react&logoColor=%23282C34)](https://docs.pmnd.rs/react-three-fiber) |
 For the react app you can run it with npx vite after installing the packages, for this app we downloaded a model of a frog and we put some lights in the scene, on the top of the frog there is a floating sphere that makes the transformations
 ![frog](imgs/frog.gif)
+
+ **Processing** | [![Processing](https://img.shields.io/badge/Processing-0078D2?style=for-the-badge&logo=processing&logoColor=white)](https://processing.org/) |
+
+For the processing part we made two figures a cube and a sphere, the sphere it's inside the cube and we make everything different on every few frames changing the colors and the ilumination while we make the transformations 
+
+![Processing1](imgs/processing.gif)
+![Processing2](imgs/processing.png)
