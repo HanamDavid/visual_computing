@@ -2,6 +2,9 @@
 Una escena 3D interactiva construida con Three.js que renderiza una pirámide de cubos utilizando un flujo de trabajo de renderizado basado en la física (PBR) y una iluminación dinámica.
  ![resultado](./captura.png)
 
+ Link:
+ https://codesandbox.io/p/devbox/heuristic-currying-g8jsdy?workspaceId=ws_FnmiaiS1pBq9ebjJozR37e
+
 
 # 🚀 Concepto del Proyecto
 Este proyecto es una demostración de las capacidades fundamentales de Three.js para crear mundos 3D en el navegador. La escena presenta una pirámide construida de forma procedural a partir de cubos individuales, iluminada por una fuente de luz que proyecta sombras realistas sobre una base. El usuario puede explorar la escena libremente gracias a los controles de cámara orbitales.
