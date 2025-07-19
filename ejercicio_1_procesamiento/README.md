@@ -37,7 +37,43 @@ Para ejecutar este proyecto, solo necesitas una cuenta de Google para acceder a 
 
 Los resultados del procesamiento de la imagen se guardarán automáticamente en la carpeta `resultados/` dentro de tu entorno de Colab. Una vez que el cuaderno termine de ejecutarse, podrás descargar esta carpeta para obtener las imágenes generadas:
 
-* `suavizado.png`: Tu imagen con el filtro de suavizado aplicado.
-* `bordes.png`: Tu imagen mostrando los bordes detectados.
-* `deteccion_yolo.png`: Tu imagen con los objetos detectados por YOLO, incluyendo los bounding boxes y las etiquetas.
+![Texto alternativo para la imagen](resultados/suavizado.png)
+![Texto alternativo para la imagen](resultados/bordes.png)
+![Texto alternativo para la imagen](resultados/deteccion_yolo.png)
 
+Este ejercicio demuestra un flujo de trabajo fundamental en visión por computadora, donde el preprocesamiento de imágenes es tan crucial como la aplicación de modelos de Deep Learning para la detección de objetos.
+
+Observaciones Clave:
+
+Importancia del Preprocesamiento:
+
+La aplicación de un filtro de suavizado (Gaussiano) antes de la detección de bordes es vital. Reduce el ruido de la imagen, lo que evita que el detector de bordes (Canny) interprete el ruido como bordes reales, resultando en contornos más limpios y precisos.
+
+Python
+
+# Suavizado Gaussiano: reduce ruido, mejora detección de bordes
+img_suavizada = cv2.GaussianBlur(img_original, (5, 5), 0)
+La detección de bordes (Canny) nos permite entender la estructura y las formas en la imagen. Los umbrales (threshold1, threshold2) son críticos para controlar la sensibilidad y la cantidad de bordes detectados. Un ajuste fino puede resaltar características importantes o eliminar ruido.
+
+Python
+
+# Detección de Bordes Canny: resaltar estructuras
+img_bordes = cv2.Canny(img_suavizada, 100, 200) # Ajustar umbrales según la imagen
+Eficiencia de YOLOv8:
+
+YOLOv8 (ultralytics) se destaca por su facilidad de uso y alta eficiencia. Con solo unas pocas líneas de código, pudimos cargar un modelo preentrenado y realizar la inferencia.
+```
+Python
+
+from ultralytics import YOLO
+model = YOLO('yolov8n.pt') # 'n' para nano (rápido y ligero), 's' para small, 'm' para medium.
+results = model(image_path) # Inferencias en la imagen
+```
+La función .plot() de los resultados de YOLO es extremadamente útil para la visualización rápida, ya que dibuja automáticamente los bounding boxes y las etiquetas sobre la imagen.
+```
+Python
+
+for r in results:
+    im_bgr = r.plot() # Genera una imagen OpenCV (BGR) con las detecciones
+    cv2.imwrite('resultados/deteccion_yolo.png', im_bgr)
+```
